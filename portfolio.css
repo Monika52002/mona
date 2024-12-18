@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(17,16,16);
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 27px;
+    background-color: rgb(17,16,16);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin-inline: 45px;
+}
+ul li a:hover{
+    color: rgb(210, 184, 36);
+    border-bottom: 2px solid rgb(210, 184, 36);
+}
+#bars{
+    display: none;
+}
+.logo{
+    font-size: 22px;
+}
+.logo span{
+    color: rgb(210, 184, 36);
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 135px;
+}
+.main_text h3{
+    font-size: 30px;
+}
+.main_text h3{
+    font-size: 30px;
+}
+.main_text h1{
+    font-size: 70px;
+}
+.main_text h1 span{
+    color: rgb(210, 184, 36);
+}
+.main_text p{
+    width: 400px;
+    padding-top: 20px;
+}
+.main_text button{
+    width: 140px;
+    height: 50px;
+    border:none;
+    font-size: 19px;
+    background-color: rgb(210, 184, 36);
+    color: black;
+    margin-top: 24px;
+}
+.main_text button:hover{
+    color: rgb(210, 184, 36);
+    background-color: transparent;
+    border: 2px solid rgb(210, 184, 36);
+}
+.head{
+    text-align: center;
+    padding: 80px;
+}
+.head span{
+    color: rgb(210, 184, 36);
+}
+.about{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+}
+.about img{
+    width: 178px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgb(210, 184, 36);
+    box-shadow: 4px rgb(210, 184, 36);
+    margin-inline: 40px;
+}
+.abouttext{
+    width: 600px;
+    text-align: center;
+}
+.abouttext p{
+    /*margin-inline: 22px;*/
+    text-align: center;
+    width: 450px;
+    margin-top: 45px;
+}
+.abouttext h2 span{
+    color: rgb(210, 184, 36);
+}
+.abouttext h2{
+    font-size: 35px;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    padding: 22px;
+    background-color: rgb(34, 34, 34);
+    margin-inline: 20px;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+.card p{
+    margin-top: 11px;
+}
+.card span{
+    font-size: 22px;
+}
+.mywork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.workcard{
+    height: 300px;
+    width: 310px;
+    background-color: #232323;
+    border-radius: 5px;
+    margin-inline: 30px;
+    padding: 11px;
+    margin-top: 22px;
+}
+.workcard img{
+    height: 200px;
+    width: 100%;
+}
+.workcard p{
+    margin-top: 11px;
+}
+.workcard a{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    padding: 6px 12px;
+    background-color: rgb(0, 128,255);
+    color: bisque;
+}
+.contact{
+    width: 400px;
+    padding:20px;
+    background-color: #303030;
+    margin: auto;
+}
+.contact input{
+    width: 90%;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 3px;
+}
+.contact p{
+    margin-top: 20px;
+}
+.contact button{
+    width: 90px;
+    height: 28px;
+    background-color: rgb(45, 45, 248);
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+}
+@media screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+        ul{
+            display: none;
+        }
+        #bars{
+            display: block;
+            font-size: 27px;
+            cursor: pointer;
+        }
+   .about{
+    display: block;
+    text-align: center;
+   }
+}
+@media screen and (max-width:800px){
+    ul{
+        display: none;
+    }
+    #bars{
+        display: block;
+        font-size: 27px;
+        cursor: pointer;
+    }
+    .main img{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:800px){
+    .contact{
+        width: 80%;
+    }
+}
